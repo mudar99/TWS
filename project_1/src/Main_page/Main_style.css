@@ -1,0 +1,177 @@
+*{
+	margin:0;
+	padding: 0;
+}
+html { scroll-behavior: smooth; }
+body{
+ 
+font-size: 90%; /*Base font-size = 14px */
+font-family: italic;
+line-height: 1.5;
+background-color: #eee;
+width:100%;
+transition: .5s;
+}
+
+/* ------------------- Friends List -------------------*/
+img.profile-photo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+  .Friend-list {
+    background: #ffffff;
+  }
+  .Friend-list .Friend-user{
+    padding: 20px 0;
+    border-top: 1px solid grey;
+    margin-bottom: 20px;
+  }
+  
+/*--------------------- Puplisher ---------------------*/
+#message{
+    background-color: rgb(214, 214, 214);
+}
+.publisher{
+    margin-top: 4%;
+    width: 60%;
+}
+/*--------------------- SideNav ---------------------*/
+.sidenav {
+    height: 100%;
+    width: 10%; 
+    position: fixed; 
+    top: 33px; /* Stay at the top */
+    right: -150px;
+    padding-top: 1%;
+    transition: .5s;
+    display: block;
+  }
+  .sidenav a:hover {
+    text-decoration: none;
+  }
+  .sidenav a {
+    transition: 0.2s;
+    color: rgb(0, 0, 0);
+    padding:3%;
+    display: block; 
+  }
+  .sidenav a:hover{
+    background-color: rgba(3, 1, 0, 0.11);
+    font-size: 22px;
+    transition: 0.2s;
+}
+/*--------------------- Footer ---------------------*/
+.footer
+{
+    padding: 10px;
+	float: left;
+    width:100%;
+    text-align: center;
+}
+.drop_post a{
+    text-decoration:  none;
+}
+
+#Get-MPosts{
+    width: 60%;
+    margin-bottom: 30px;
+}
+/*--------------------- Cards ---------------------*/
+.Cards{
+    margin-right : 14%;
+    float : right;
+    width: 20%;
+}
+.Cards > li{
+    margin-top : 4%;
+    margin-bottom : 4%;
+}
+.request_card img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+/*--------------------- For Mobile ---------------------*/
+@media screen and (max-width: 1000px)
+{
+    #Get-MPosts{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+.P_Suggestions{
+    width:70%;
+    margin-top: 15%;
+}
+    .Cards{
+        
+        margin: 0;
+        width: 100%;
+        float: none;
+     }
+    #Q1,#Q2,#Q3,#Q4,#Q5{
+       display: none;
+    }
+    .post-body p{
+        font-size: 18px;
+    }
+    .publisher{
+        margin-top: 3%;
+        width: 100%;
+   
+    }
+    #nav_align ,.sidenav{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px)
+{
+   
+    #ID{
+           font-size: 15px;  
+       }
+    .post-body p{
+        font-size: 16px;
+    }
+    .accept_logout{
+        
+        width: 20%;
+        
+    }
+    .accept_logout p{
+    
+        font-size: 16px;
+    
+     }
+     .accept_logout #Yes , .accept_logout #No{
+         font-size: 12px;
+         width: 50%  ;
+     }
+     .publisher{
+        padding-top: 25px;
+        width: 100%;
+    }
+     
+}
+
+.nav_item button
+{
+    /* width: 10%; */
+    margin: 0 22px;
+}
+#nav_align{
+    width: 40px;
+}
+
+
+.notification-photo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.bd-example-modal-notifications ,.bd-example-modal-friends,.bd-example-modal-logout{
+    transition: .2s ease-in-out;
+    backdrop-filter: blur(8px);
+}

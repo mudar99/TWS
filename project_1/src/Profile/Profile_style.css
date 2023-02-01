@@ -1,0 +1,195 @@
+*{
+   
+    padding: 0 ;
+    margin: 0 ;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: white;
+}
+.nav_color{
+    background-color: #17a2b8;
+}
+.profile_img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:50%;
+}
+.profile_photo{
+    margin-top: -10% ;
+}
+
+.cover_photo{
+    height: 500px;
+    margin-top: 50px;
+}
+.social-post-image{
+    width: 100%;
+    object-fit: cover;
+}
+.cover_choose{
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+.post{
+    padding: 0;
+    margin-bottom: 10px;
+    width: 60%;
+    /* float: left; */
+}
+
+.clicked_like {
+    background-color: #17a2b8;
+    color: white;
+  }
+
+.post-header{
+    display: flex;
+}
+.post-header .img_header > img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.drop_post{
+    margin-left:-100px;
+}
+
+.post-body p{
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.footer
+{
+    
+	float: left;
+    width:100%;
+    height: 100%;
+}
+.tab_content{
+    display: none;
+}
+.post-body > p{
+    font-size: 14px;
+}
+
+ul{
+    list-style: none;
+}
+.Bio{
+    height: auto;
+    width: 35%;
+    float: right;
+}
+
+.tabs{
+    width: 100%;
+
+}
+.tabs ul{
+    display: flex;
+}
+.tabs ul li{
+    width: 100%;
+    background-color: #dbe3e3;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+#age_warning,#day_warning,#month_warning,#year_warning{
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+  
+
+@media screen and (max-width: 1000px)
+{
+
+    .Bio{
+        float: none;
+        width: 100%;
+        background-color: rgb(190, 195, 197);  
+    }
+    .Posts{
+        margin-top: 2%;
+        width: 100%;
+        float: left;
+    }
+    .post{
+        
+        width: 100%;
+    }
+    .cover_photo{
+        height: 400px;
+        
+    }
+    .profile_img{
+        width:150px;
+        height:150px;
+        object-fit:cover;
+        border-radius:50%;
+    }
+    .profile_photo{
+        margin-top: -15% ;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    body{
+        width: 100%;
+    }
+    .Bio{
+        float: none;
+        width: 100%;
+        background-color: rgb(190, 195, 197);  
+    }
+    .post{
+        width: 100%;
+    }
+    .cover_photo{
+        height: 20%;
+       
+    }
+    .profile_img{
+        width:100px;
+        height:100px;
+        object-fit:cover;
+        border-radius:50%;
+    }
+    .profile_photo{
+        margin-top: -15% ;
+    }
+}
+
+.cer_selector{
+    border:
+    2px solid #ccc;
+     height: 100px; 
+     overflow-y: scroll
+}
+.cer_selector div label {
+    padding: 2px;
+    width: 100%;
+    transition: .2s ease-in-out;
+}
+.cer_selector div :hover {
+    background-color:#17a2b8;
+    font-size: 16px;
+}
+
+.Comments{
+
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(156, 156, 156, 0.788);
+}
+.form-control:focus {
+    border-color: #7e7e7e;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(156, 156, 156, 0.788);
+  }
+ .Privacy > a:hover{
+     cursor: pointer;
+     
+
+ }
